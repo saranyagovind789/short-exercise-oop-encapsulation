@@ -20,11 +20,11 @@ public class WeatherReporter {
     public String displayWeather() {
 
         double tempFahrenheit = (NINE / FIVE) * temperature + THIRTY_TWO;
-        return MessageFormat.format("I am in {0} and it is {1}. {2}. The temperature in Fahrenheit is {3}.", location, checkLocation(), checkTemperature(), tempFahrenheit);
+        return MessageFormat.format("I am in {0} and it is {1}. {2}. The temperature in Fahrenheit is {3}.", location, checkWeather(), checkTemperature(), tempFahrenheit);
 
     }
 
-    public String checkLocation() {
+    public String checkWeather() {
         if (location.equalsIgnoreCase("LONDON")) {
 
             return "🌦";
